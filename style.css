@@ -663,6 +663,15 @@ main {
     margin-left: 31px;
 }
 
+.learning_button button:hover {
+    background-color: #000;
+    color: rgb(99, 254, 68);
+}
+
+.learning_button a:hover {
+    color: rgba(254, 114, 68, 1);
+}
+
 
 
 
@@ -755,7 +764,7 @@ main {
 
 .alisa_star {
     width: 140px;
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 .alisa_star img {
@@ -1216,7 +1225,7 @@ footer {
     
 
     .alisa {
-        max-width: 500px;
+        max-width: 350px;
         height: 200px;
         flex-direction: column;
     }
@@ -1225,10 +1234,30 @@ footer {
         display: none;
     }
 
+    .alisa_name {
+        
+    }
+
+    .alisa_star img{
+        margin-left: none;
+    }
+
     .alex {
         flex-direction: column;
         margin-top: 100px;
+        width: 350px;
+        height: 200px;
     }
+
+    .alex h2, .alex h3 {
+        display: none;
+    }
+
+    .company_item_image {
+        margin: 15px 10px 0 0;
+    }
+
+    
 }
 
   
