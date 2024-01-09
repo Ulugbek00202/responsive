@@ -1344,6 +1344,11 @@ footer {
         position: none;
     }
 
+    .instructor_text {
+        text-align: center;
+        margin: 0 auto;
+    }
+
     .instructor_text h1{
         font-size: 30px !important;
     }
