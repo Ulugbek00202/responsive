@@ -639,6 +639,10 @@ main {
     height: 100%;
 }
 
+.images3 {
+    display: none;
+}
+
 .learning_button {
     margin-top: 25px;
 }
@@ -854,6 +858,10 @@ main {
     color: rgba(255, 255, 255, 1);
     margin-top: 28px;
     cursor: pointer;
+}
+
+.instructor button:hover {
+    background-color: #000;
 }
 
 
@@ -1164,9 +1172,41 @@ footer {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .learning_image img:nth-child(1) {
+        display: none;
+    }
+
+    .learning_image img:nth-child(2) {
+        width: 350px;
+        height: 300px;
+    }
+
+    .images3 {
+        display: block;
+    }
+}
+
 
 @media screen and (max-width: 576px ) {
 
+    .courses_info span {
+        width: 35px;
+        height: 35px;
+    }
+
+    .courses_info span img {
+        width: 18px;
+        height: 10px;
+    }
+
+    .courses_info h3 {
+        font-size: 12px;
+    }
+
+    .categoria2 h1 {
+        font-size: 30px;
+    }
 
     .trainer_info {
         text-align: center;
@@ -1215,6 +1255,36 @@ footer {
 
 
 
+
+    .learning_title h1{
+        font-size: 30px;
+    }
+
+    .learning_title p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .learning_button button {
+        width: 170px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 12px;
+    }
+
+    .learning_button a {
+        font-size: 16px;
+    }
+
+
+
+
+
+
+    .about {
+        
+    }
+
     .about_title h1 {
         font-size: 30px;
     }
@@ -1222,12 +1292,15 @@ footer {
     .about_title h2 {
         font-size: 30px;
     }
+
+    
     
 
     .alisa {
         max-width: 350px;
         height: 200px;
         flex-direction: column;
+        margin: 0 auto;
     }
 
     .alisa h2, .alisa h3 {
@@ -1247,6 +1320,7 @@ footer {
         margin-top: 100px;
         width: 350px;
         height: 200px;
+        margin: 0 auto;
     }
 
     .alex h2, .alex h3 {
@@ -1257,7 +1331,23 @@ footer {
         margin: 15px 10px 0 0;
     }
 
+
+
+    .instructor {
+        background-image: none;
+        background-color: rgb(224,234,252);
+        text-align: center;
+    }
+
+    .instructor_text h1{
+        font-size: 30px !important;
+    }
+
     
 }
 
-  
+@media screen and (max-width: 512px) {
+    .design {
+        margin: 0 auto;
+    }
+} 
