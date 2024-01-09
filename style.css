@@ -53,6 +53,7 @@ header {
     font-weight: 400;
     color: rgb(101, 99, 99);
     font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
 }
 
 
@@ -139,6 +140,11 @@ header {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
+.first_button:hover {
+    background-color: #000;
+    color: rgb(99, 254, 68);
+}
+
 .second_button {
     display: flex;
     align-items: center;
@@ -147,6 +153,7 @@ header {
     font-weight: 700;
     color: rgba(61, 61, 61, 1);
     font-family: 'Montserrat Alternates', sans-serif;
+    cursor: pointer;
 }
 
 .second_button span {
@@ -386,7 +393,7 @@ main {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* margin-top: 63px; */
+    margin-top: 50px;
 }
 
 .alex_image {
@@ -855,6 +862,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     margin: 0 20px;
+    flex-wrap: wrap;
 }
 
 .servise {
@@ -950,6 +958,25 @@ footer {
     color: rgba(59, 58, 65, 1);
 }
 
+@media screen and (max-width: 1150px) {
+    .alexses {
+        justify-content: space-around;
+    }
+
+    .alex_item {
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .learning_image img{
+        max-width: 500px;
+        height: 400px;
+    }
+}
+
+
 
 @media screen and (max-width: 992px){
     .nav {
@@ -998,7 +1025,26 @@ footer {
 
     .learning_image img{
         max-width: 350px;
-        height: 400px;
+        height: 350px;
+    }
+
+    .alex_profile {
+        padding-right: 20px;
+    }
+
+    .alex_title {
+        margin-left: none;
+        width: 280px;
+    }
+
+    .alex_title h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .courses_info h3 {
+        font-size: 16px
     }
 }
 
@@ -1028,8 +1074,120 @@ footer {
         justify-content: center;
     }
 
+    .alex_item {
+        margin: 0 20px 20px 0;
+    }
+
+    .learning_item {
+        flex-direction: column;
+    }
+
+    .learning_title {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .learning_title h1 {
+        font-size: 38px;
+        font-weight: 700;
+        color: rgba(61, 61, 61, 1);
+    }
+    
+    .learning_title span {
+        color: rgba(254, 114, 68, 1);
+    }
+    
+    .learning_title p {
+        margin-top: 21px;
+        line-height: 34px;
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 1);
+    }
+
     .learning_image img{
+        margin: 40px 0 0 70px;
+        max-width: 400px;
+    }
+
+
+    .copyrigt_item {
+        
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .alex_item {
+        width: 300px;
+    }
+
+    .alex_image {
+        width: 300px;
+    }
+
+    .alex_profile ul {
         display: none;
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .courses_info {
+        flex-direction: column;
+    }
+
+    .courses_info h3 {
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 576px ) {
+
+
+    .trainer_info {
+        text-align: center;
+    }
+
+    .trainer_info h1 {
+        font-size: 35px;
+    }
+
+    .trainer_info p {
+        font-size: 16px;
+    }
+
+    .tarin_button {
+        margin: 0 auto;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .first_button {
+        width: 160px;
+        height: 50px;
+        border-radius: 16px;
+        background-color: rgba(102, 82, 218, 1);
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 auto;
+    }
+    
+    .second_button {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 auto;
+    }
+    
+    .second_button span {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .second_button span img {
+        width: 20px;
+        height: 20px;
     }
 }
 
