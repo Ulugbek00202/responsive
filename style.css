@@ -1353,6 +1353,14 @@ footer {
         font-size: 30px !important;
     }
 
+    .copy_right_logo img {
+        width: 100px;
+    }
+
+    .copyrigt_item h1 {
+        font-size: 16px;
+    }
+
     
 }
 
