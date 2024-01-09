@@ -1320,7 +1320,7 @@ footer {
         margin-top: 100px;
         width: 350px;
         height: 200px;
-        margin: 0 auto;
+        margin: 20px auto 0;
     }
 
     .alex h2, .alex h3 {
@@ -1334,9 +1334,14 @@ footer {
 
 
     .instructor {
+
         background-image: none;
         background-color: rgb(224,234,252);
         text-align: center;
+    }
+
+    .instructor_item {
+        position: none;
     }
 
     .instructor_text h1{
