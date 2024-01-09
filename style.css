@@ -718,14 +718,14 @@ main {
     margin-left: 20px;
 }
 
-.alisa_inform h1 {
+.alisa_inform h3 {
     font-size: 20px;
     font-weight: 500;
     color: rgba(61, 61, 61, 1);
     margin-bottom: 5px;
 }
 
-.alisa_inform p {
+.alisa_inform h2 {
     font-size: 16px;
     font-weight: 400;
     color: rgba(61, 61, 61, 1);
@@ -958,6 +958,20 @@ footer {
     color: rgba(59, 58, 65, 1);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1150px) {
     .alexses {
         justify-content: space-around;
@@ -1188,6 +1202,32 @@ footer {
     .second_button span img {
         width: 20px;
         height: 20px;
+    }
+
+
+
+    .about_title h1 {
+        font-size: 30px;
+    }
+
+    .about_title h2 {
+        font-size: 30px;
+    }
+    
+
+    .alisa {
+        max-width: 500px;
+        height: 200px;
+        flex-direction: column;
+    }
+
+    .alisa h2, .alisa h3 {
+        display: none;
+    }
+
+    .alex {
+        flex-direction: column;
+        margin-top: 100px;
     }
 }
 
