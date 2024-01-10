@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .container {
     max-width: 1187px;
     margin: 0 auto;
@@ -244,6 +245,7 @@ main {
     align-items: center;
     justify-content: space-around;
     margin-top: 60px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -418,12 +420,15 @@ main {
     background-color: rgba(71, 194, 255, 0.12);
 }
 
+.alisa_head {
+    padding: 15px;
+}
+
 .alex_profile {
+    width: 100%;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 15px;
-    margin-left: 13px;
 }
 
 .alex_profile_image {
@@ -435,17 +440,16 @@ main {
 .alex_profile_image img {
     width: 50px;
     height: 50px;
-    margin-right: 11px;
 }
 
 .alex_profile_image h1 {
     font-size: 16px;
     font-weight: 500;
     color: rgba(61, 61, 61, 1);
+    margin-left: 10px;
 }
 
 .alex_profile ul {
-    margin-left: 72px;
 }
 
 .alex_profile ul li {
@@ -467,8 +471,7 @@ main {
 }
 
 .alex_title {
-    margin-top: 16px;
-    margin-left: 26px;
+    margin-top: 20px;
     width: 310px;
 }
 
@@ -483,6 +486,7 @@ main {
     align-items: center;
     justify-content: space-between;
     margin-top: 15px;
+    /* padding: 0 0 0 25px; */
 }
 
 
@@ -492,7 +496,7 @@ main {
     width: 140px;
     height: 20px;
     gap: 8px;
-    margin-left: 25px;
+    
 }
 
 .alex_time img {
@@ -502,7 +506,8 @@ main {
 
 .alex_time_items ul {
     list-style: none;
-    margin-right: 16px;
+    /* margin-right: 16px; */
+    margin-bottom: 0;
 }
 
 .alex_time_items ul li {
@@ -524,7 +529,6 @@ main {
 
 .alex_cash {
     margin-top: 24px;
-    margin-left: 29px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -544,7 +548,7 @@ main {
 }
 
 .alex_pay h2 {
-    margin-left: 4px;
+    /* margin-left: 4px; */
     font-size: 16px;
     font-weight: 500;
     color: rgba(61, 61, 61, 0.8);
@@ -555,7 +559,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-right: 22px;
 }
 
 .alex_cash_star h2 {
@@ -563,6 +566,7 @@ main {
     font-weight: 500;
     color: rgba(61, 61, 61, 0.8);
     margin-right: 8px;
+    margin-bottom: 0;
 }
 
 .alex_cash_star img {
@@ -629,9 +633,9 @@ main {
 }
 
 .learning_image {
-    width: 600px;
-    height: 500px;
-    margin-left: 64px;
+    max-width: 600px;
+    max-height: 500px;
+    overflow: hidden;
 }
 
 .learning_image img {
@@ -709,15 +713,19 @@ main {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
+    gap: 20px;
 }
+
 
 .alisa {
     display: flex;
     align-items: center;
     box-shadow: 0px 8px 24px 0px rgba(31, 31, 51, 0.06);
-    max-width: 590px;
+    max-width: 560px;
     height: 246px;
     border-radius: 10px;
+    padding: 20px;
 }
 
 .alisa_image img {
@@ -728,7 +736,6 @@ main {
 
 .alisa_inform {
     max-width: 433px;
-    margin-left: 20px;
 }
 
 .alisa_inform h3 {
@@ -841,7 +848,7 @@ main {
 }
 
 .instructor_text h1 {
-    width: 487px;
+    max-width: 487px;
     font-size: 38px !important;
     font-weight: 600;
 }
@@ -967,6 +974,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .copyrigt_item h1 {
@@ -1017,6 +1025,10 @@ footer {
     .navbar {
         display: flex;
     }
+    
+    .person_information {
+        justify-content: center;
+    }
 
     .train_image {
         display: none;
@@ -1040,6 +1052,10 @@ footer {
         height: 50px;
         border-radius: 50%;
     }
+    .alisa {
+        max-width: 850px;
+        min-width: 600px;
+    }
     
     .courses_info span img {
         width: 22px;
@@ -1060,11 +1076,9 @@ footer {
     }
 
     .alex_profile {
-        padding-right: 20px;
     }
 
     .alex_title {
-        margin-left: none;
         width: 280px;
     }
 
@@ -1073,17 +1087,15 @@ footer {
     }
 }
 
-@media screen and (max-width: 850px) {
-    .courses_info h3 {
-        font-size: 16px
-    }
-}
 
 
 @media screen and (max-width: 768px) {
     .courses {
         margin: 30px auto 0;
         max-width: 650px;
+    }
+    .person_information {
+        justify-content: center;
     }
 
     .courses_info span {
@@ -1137,7 +1149,7 @@ footer {
     }
 
     .learning_image img{
-        margin: 40px 0 0 70px;
+        margin: 20px 0 0;
         max-width: 400px;
     }
 
@@ -1147,48 +1159,21 @@ footer {
     }
 }
 
-@media screen and (max-width: 750px) {
-    .alex_item {
-        width: 300px;
-    }
-
-    .alex_image {
-        width: 300px;
-    }
-
-    .alex_profile ul {
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 660px) {
-    .courses_info {
-        flex-direction: column;
-    }
-
-    .courses_info h3 {
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .learning_image img:nth-child(1) {
-        display: none;
-    }
-
-    .learning_image img:nth-child(2) {
-        width: 350px;
-        height: 300px;
-    }
-
-    .images3 {
-        display: block;
-    }
-}
 
 
 @media screen and (max-width: 576px ) {
+
+    .courses {
+        flex-wrap: wrap;
+        /* height: 200px; */
+        min-height: 160px;
+        padding: 20px 0;
+        gap: 10px;
+    }
+
+    .courses_info {
+        min-width: 185px;
+    }
 
     .courses_info span {
         width: 35px;
@@ -1208,38 +1193,38 @@ footer {
         font-size: 30px;
     }
 
+    .trainers {
+        margin: 30px 0 0;
+    }
+
     .trainer_info {
         text-align: center;
     }
 
     .trainer_info h1 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .trainer_info p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .tarin_button {
-        margin: 0 auto;
+        /* margin: 0 auto; */
         align-items: center;
+        justify-content: center;
         gap: 20px;
     }
 
     .first_button {
-        width: 160px;
-        height: 50px;
-        border-radius: 16px;
-        background-color: rgba(102, 82, 218, 1);
-        font-size: 16px;
-        font-weight: 600;
-        margin: 0 auto;
+        width: 130px;
+        height: 30px;
+        border-radius: 8px;
+        font-size: 12px;
     }
     
     .second_button {
         font-size: 16px;
-        font-weight: 600;
-        margin: 0 auto;
     }
     
     .second_button span {
@@ -1254,28 +1239,58 @@ footer {
     }
 
 
+    .categories_item {
+        justify-content: center;
+        margin: 40px 0 0;
+    }
+
+    .design span {
+        width: 76px;
+        height: 76px;
+    }
+    
+    .design img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+
+    .explore h1 {
+        font-size: 25px;
+    }
+
+    .explore_nav ul {
+        gap: 10px;
+    }
+
 
 
     .learning_title h1{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .learning_title p{
-        font-size: 16px;
+        font-size: 12px;
         line-height: 25px;
     }
 
     .learning_button button {
-        width: 170px;
+        width: 140px;
         height: 40px;
-        font-size: 16px;
+        font-size: 14px;
         border-radius: 12px;
     }
 
     .learning_button a {
-        font-size: 16px;
+        font-size: 14px;
     }
 
+    .learning_image {
+        min-width: 250px;
+        min-height: 200px;
+    }
 
 
 
@@ -1297,35 +1312,35 @@ footer {
     
 
     .alisa {
-        max-width: 350px;
-        height: 200px;
+        min-width: 250px;
+        max-width: 400px;
+        min-height: 350px;
         flex-direction: column;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
-    .alisa h2, .alisa h3 {
-        display: none;
-    }
+    
 
     .alisa_name {
-        
+        display: block;
     }
 
-    .alisa_star img{
-        margin-left: none;
+
+
+    .alisa_inform h3 {
+        font-size: 16px;
     }
 
-    .alex {
-        flex-direction: column;
-        margin-top: 100px;
-        width: 350px;
-        height: 200px;
-        margin: 20px auto 0;
+    .alisa_inform h2 {
+        font-size: 12px;
     }
 
-    .alex h2, .alex h3 {
-        display: none;
+    .alisa_google h1, .alisa_google p {
+        font-size: 12px;
     }
+
+
+
 
     .company_item_image {
         margin: 15px 10px 0 0;
@@ -1363,9 +1378,3 @@ footer {
 
     
 }
-
-@media screen and (max-width: 512px) {
-    .design {
-        margin: 0 auto;
-    }
-} 
