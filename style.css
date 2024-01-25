@@ -273,6 +273,7 @@ main {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .design {
@@ -1085,6 +1086,10 @@ footer {
     .alex_title h2 {
         font-size: 18px;
     }
+
+    .categories_item {
+        gap: 20px;
+    }
 }
 
 
@@ -1156,6 +1161,10 @@ footer {
 
     .copyrigt_item {
         
+    }
+
+    .categories_item {
+        justify-content: space-around;
     }
 }
 
